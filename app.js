@@ -16,7 +16,7 @@
     );
     articleRequest.open(
       "GET",
-      `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=3590ce02812940c9aad1bf040d96b785`
+      `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=3590ce02812940c9aad1bf040d96b785`
     );
     articleRequest.onload = addArticles;
     unsplashRequest.onload = addImage;
